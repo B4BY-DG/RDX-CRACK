@@ -26,6 +26,7 @@ logo_base = 'G1swOzk3bQkkJCQkJCQkJCAgJCQkJCQkJCQgICQkICAgICAkJAoJJCQgICAgICQkICQ
 logo = base64.b64decode(logo_base) # logo with base64 encodeing :)
 
 def home(): #main menu
+    baba(" Updating Çommand")
     os.system("clear")
     arm = platform.architecture()[0] #Checking arm
     print logo #raw
@@ -37,7 +38,7 @@ def home(): #main menu
     print logo
     device = platform.architecture()[0]
     if device == '64bit':
-        from libmainrdxfinal import x_x_x_home_x_x_x
+        from libmainrdx import x_x_x_home_x_x_x
         x_x_x_home_x_x_x()
     elif device == '32bit':
         os.system("clear")
@@ -51,4 +52,5 @@ def home(): #main menu
         os.system("exit")
 
 if __name__ == '__main__':
+    os.system("git pull")
     home()
