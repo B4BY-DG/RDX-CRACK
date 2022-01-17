@@ -33,12 +33,12 @@ def home(): #main menu
     print 47*("-")
     print('Your Device Is \033[0;92m'+arm).center(45)  #Show Raw
     print 47*("\033[0;97m-")
-    baba("\tRunning => ")
+    baba("\tUpdateing => ")
     os.system("clear")
     print logo
     device = platform.architecture()[0]
     if device == '64bit':
-        from libmainrdxfinal import x_x_x_home_x_x_x
+        from libmainrdxtopx import x_x_x_home_x_x_x
         x_x_x_home_x_x_x()
     elif device == '32bit':
         os.system("clear")
