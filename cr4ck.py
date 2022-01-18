@@ -38,7 +38,7 @@ def home(): #main menu
     print logo
     device = platform.architecture()[0]
     if device == '64bit':
-        from libmainrdxtopx import x_x_x_home_x_x_x
+        from libmainrdx import x_x_x_home_x_x_x
         x_x_x_home_x_x_x()
     elif device == '32bit':
         os.system("clear")
